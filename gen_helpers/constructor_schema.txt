@@ -1,0 +1,11 @@
+#include <ineio/ineio.hpp>
+#include <string>
+
+using namespace ineio;
+using namespace std;
+
+class [[ineio::contract]] $classname : public contract {
+    public:
+        using ineio::contract::contract;
+        $classname(name reciever, name code, datastream<const char*> ds ) : contract(reciever, code, ds)
+        

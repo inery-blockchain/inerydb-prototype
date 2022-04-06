@@ -1,0 +1,6 @@
+    struct [[ineio::table]] $tablename {
+        uint64_t    id;
+        $type       $name;
+        uint64_t primary_key() const {return id; }
+    };
+    typedef ineio::multi_index<"$tablename"_n, $tablename> $table_inst; $table_inst  $tablename;

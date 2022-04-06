@@ -1,0 +1,6 @@
+    [[ineio::action]] void set$table $parameters {
+        $table.emplace(get_self(), [&](auto &row){
+            row.id = $table.available_primary_key();
+            row.$name = $name;
+        });
+    }

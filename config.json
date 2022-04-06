@@ -1,0 +1,5 @@
+{
+    "NODE_IP" : "YOUR_NODE_IP",
+    "NODE_USER" : "root",
+    "NODE_PASSWORD" : "YOUR_NODE_PASSWORD"
+}	
